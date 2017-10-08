@@ -1,3 +1,7 @@
+// This is all of our data strcutured in JSON view that we will be using for our application
+// Take note of us saving all of this to a variable called data and at the very bottom we are using modules.export = data; 
+// This allows our application to able to access this as a data variable now
+
 const data = [
         {
             "id": 1,
