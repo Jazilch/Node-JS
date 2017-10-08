@@ -40,3 +40,5 @@ app.get('/api/contacts', (req, res) => {
 	res.json(contacts);
 });
 ```
+
+For full course details go to https://scotch.io/courses/build-a-restful-nodejs-api/introduction
