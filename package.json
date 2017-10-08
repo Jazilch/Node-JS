@@ -1,3 +1,9 @@
+// this is our package.json file in which we need for each of our files to properly run. Once you are in your directory you
+// once you run git init it will automatically create this JSON file for you and start the structure. Once you have this
+// you can add additional dependencies that you will need for you application as you can see on line 15. 
+// You can easily add these once you're in the directory to install depencies you can do npm install express --save in order
+// to save express package as a dependency and add this into your JSON
+
 {
   "name": "node-endpoint",
   "version": "1.0.0",
