@@ -17,7 +17,13 @@ app.listen(port, hostname, () => {
 });
 ```
 
+This is the bulk of our app below. With any projects in Node we are requiring our dependencies and requiring them within these modules to make sure that we are able then use them within this application. A quick note on the cors package is mostly for when you're setting up API as it allows access from items aren't available on the same port or domain. If you look back at our data.js file you now see that we are requiring this JSON data into a contacts module on line 27.
 
+The below you're calling your app with app.get (this can be exchanged with other requests such as POST, PUT and Delete). Then we are setting the URL that we want to make this data availble on. This is why when you type in a URL you are getting the data back. From there we are setting the response to send back our contacts module in JSON format. 
+
+Now if you open http://localhost:3001/api/contacts/ you should now see all of the contacts that were in the data.js file. 
+
+```javascript
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -33,3 +39,4 @@ app.get('/api/contacts', (req, res) => {
 	}
 	res.json(contacts);
 });
+```
